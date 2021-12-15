@@ -11,6 +11,7 @@ export const ColorModeSwitcher = props => {
     <IconButton
       size="md"
       fontSize="lg"
+      _hover={{ background: 'transparent', borderColor: 'gray.200', borderWidth: '1px'}}
       aria-label={`Switch to ${text} mode`}
       variant="ghost"
       color="current"

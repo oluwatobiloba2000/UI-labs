@@ -11,8 +11,8 @@ ReactDOM.render(
   <StrictMode>
     <ChakraProvider theme={theme}>
       <ColorModeScript />
-      <Fonts />
       <App />
+      <Fonts />
     </ChakraProvider>
   </StrictMode>,
   document.getElementById('root')

@@ -9,7 +9,7 @@ function SearchBar() {
             aria-label="search the docs"
             display="flex"
             bg="#2d3748"
-            justifyContent="end"
+            justifyContent="start"
             height="50px"
             fontSize="20px"
             borderRadius="10px"
@@ -18,6 +18,9 @@ function SearchBar() {
             top="120px"
             margin="0px auto"
             width="60%" cursor="pointer"
+            _active={{
+                backgroundColor: "#242b38"
+            }}
             _hover={{
                 backgroundColor: "#242b38"
             }}>
@@ -27,4 +30,4 @@ function SearchBar() {
     )
 }
 
-export default SearchBar
+export default SearchBar;

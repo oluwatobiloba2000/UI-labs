@@ -28,7 +28,11 @@ function Header(props) {
                 </Flex>
 
                 <Flex>
-                  <IconButton fontSize="28px" bg="initial" aria-label="github" size="md" variant="ghost" icon={<AiFillGithub />} />
+                  <IconButton fontSize="28px" _hover={{
+                      background: 'transparent',
+                      borderColor: 'gray.200',
+                      borderWidth: '1px' 
+                      }} bg="initial" aria-label="github" size="md" variant="ghost" icon={<AiFillGithub />} />
                     <ColorModeSwitcher />
                 </Flex>
             </Flex>
