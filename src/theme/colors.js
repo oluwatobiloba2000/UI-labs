@@ -1,7 +1,3 @@
-// export const presets = (brand) => {
-//     const colors = {
-//         light: {
-//           primary: 
-//         }
-//     }
-// }
+export const colors = {
+          primary: '#00bcd4'
+}

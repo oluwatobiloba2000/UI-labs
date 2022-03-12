@@ -1,33 +1,42 @@
-import styles from './styles';
-import {fonts} from './fonts';
-import { extendTheme } from '@chakra-ui/react';
+import { create } from '@storybook/theming';
 
 const baseColor = {
-    bg_primary: "#1E1671",
-    text_primary: "#3629B7",
-    text_primary_dark: "#9187f3",
-    text_gray: "#838383",
-    secondary: "#1573FF",
-    tertiary: "#4EB4FF",
-    bg_dark: "#121212",
-    bg_light: "#FFFFFF",
-    bg_gray: "#F8F9FB",
+   
 }
 
-const config = {
-    useSystemColorMode: false,
-    initialColorMode: "light",
-}
+export default create({
+  base: 'light',
 
-const overrides = {
-    colors: {
-        baseColor,
-    },
-    config,
-    styles,
-    fonts,
-}
+  colorPrimary: '#14213D',
+  colorSecondary: 'deepskyblue',
 
-const theme = extendTheme(overrides);
+  // UI
+  appBg: 'white',
+  appContentBg: 'white',
+  appBorderColor: 'grey',
+  appBorderRadius: 4,
 
-export default theme;
+  // Typography
+  fontBase: '"Open Sans", sans-serif',
+  fontCode: 'monospace',
+
+  // Text colors
+  textColor: 'black',
+  textInverseColor: 'rgba(255,255,255,0.9)',
+
+  // Toolbar default and active colors
+  barTextColor: '#E5E5E5',
+  barSelectedColor: '#FCA311',
+  barBg: '#14213D',
+
+  // Form colors
+  inputBg: 'white',
+  inputBorder: '#E5E5E5',
+  inputTextColor: 'black',
+  inputBorderRadius: 4,
+
+//   brandTitle: 'UI Labs',
+  brandUrl: 'https://github.com/oluwatobiloba2000/UI-labs',
+  brandImage: 'https://res.cloudinary.com/oluwatobby/image/upload/v1647083539/image-removebg-preview_pv0ap1.png',
+});
+
