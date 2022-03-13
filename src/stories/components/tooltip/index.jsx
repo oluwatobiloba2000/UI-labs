@@ -2,11 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
-/**
- * Primary UI component for user interaction
- */
 export const Tooltip = ({ color, backgroundColor, position, text, children }) => {
-//   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <div
       className={'ui-tooltip--trigger'}
